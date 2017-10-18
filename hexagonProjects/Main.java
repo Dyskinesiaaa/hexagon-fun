@@ -53,13 +53,17 @@ public class Main extends PApplet{
 		}
 		return returnArray;
 	}
+	public void setAllColors(int color)
+	{
+		fill(color);
+		stroke(color);
+	}
     public void settings(){
         size(600,600);
     }
     public void setup(){
     	int color = colorFromString("red");
-        fill(color);
-        stroke(color);
+        setAllColors(color);
         strokeWeight(0);
     }
     public void hexagon(int[] centerXY, int size, boolean isFlatTop)
